@@ -1,0 +1,15 @@
+---
+import Navbar from './Navbar.astro';
+import { getGreeting } from '../scripts/greeting';
+---
+
+<header class="flex flex-row h-[10vh] border-b-2 border-black bg-[#00beef]">
+    <div class="basis-1/3 ml-2 mt-2">
+        <img alt="Moonsoft Studios Logo" src="main/moosoftlogoicon.png" class="w-[9vh]">
+    </div>
+    <p class="basis-1/3 text-center my-auto text-3xl">{getGreeting()}</p>
+    <div class="basis-1/3 my-auto">
+        <Navbar />
+    </div>
+</header>
+

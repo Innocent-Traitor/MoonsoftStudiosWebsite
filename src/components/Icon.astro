@@ -1,0 +1,24 @@
+---
+const { icon } = Astro.props;
+const iconTable = {
+    "AstroLightIcon": "icons/astro-icon-dark.svg",
+    //"AstroDarkIcon": "icons/astro-icon-light.svg",
+    "TailwindIcon": "icons/tailwind-icon.svg",
+    "GLuaIcon": "icons/garrys-mod-icon.svg",
+    "JSIcon": "icons/js-icon.svg",
+    "NodeJSIcon": "icons/nodejs-icon.svg",
+    "GMLLightIcon": "icons/gml-dark.svg",
+    //"GMLDarkIcon": "icons/gml-light.svg",
+    "GodotIcon": "icons/godot-icon.svg", 
+    "CSharpIcon": "icons/c-sharp.svg",
+    "RustIcon": "icons/rust-icon.svg",
+    "VisualStudioCodeIcon": "icons/vscode.svg",
+    "GitIcon": "icons/git-icon.svg",
+    "AsepriteIcon": "icons/aseprite-icon.svg",
+    "AudacityIcon": "icons/audacity-icon.svg",
+    "UnityIcon": "icons/unity-icon.svg",
+    "CodeiumIcon": "icons/codeium_logo.svg"
+}
+---
+
+<img src={iconTable[icon]} alt={icon} class="size-5 my-auto mx-1.5">
